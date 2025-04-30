@@ -17,17 +17,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item">
-            <a class="site-list-link--current" href="#">
+            <a class="site-list__link site-list__link--current" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list-link" href="#">
+          <li class="site-list">
+            <a class="site-list__link" href="#">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list-link" href="#">
+          <li class="site-list">
+            <a class="site-list__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -47,25 +47,27 @@
     <section class="programs">
       <ul class="programs__list">
         <li class="programs__item">
-          <h2 class="program__second-title">Похудение</h2>
-          <p class="program__action">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
-            нa диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program__link" href="#">каталог slim</a>
+          <section class="program">
+            <h2 class="program__second-title">Похудение</h2>
+            <p class="program__action">
+              Ваш кот весит больше собаки и почти утратил способность лазить
+              по деревьям? Пора нa диету! Cat Energy Slim поможет вашему
+              питомцу сбросить лишний вес.
+            </p>
+            <a class="program__link" href="#">каталог slim</a>
+          </section>
+        </li>
+        <li class="programs__item">
+          <section class="program">
+            <h2 class="program__second-title">Набор массы</h2>
+            <p class="program__action">
+              Заработать авторитет среди дворовых котов и даже собак? Серия
+              Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="program__link" href="#">каталог pro</a>
+          </section>
         </li>
       </ul>
-    </section>
-
-
-    <section class="program">
-      <li class="programs__item"></li>
-      <h2 class="program__second-title">Набор массы</h2>
-      <p class="program__action">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
-        поможет вашему коту нарастить необходимые мышцы!</p>
-      <a class="program__link" href="#">каталог pro</a>
-      </li>
-    </section>
-
-    </ul>
     </section>
 
     <section class="explanation">
@@ -115,9 +117,9 @@
     </section>
 
     <section class="contacts">
-      <h2>Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="meta__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="location__map" src="img/location.png" alt="карта с значком логотипа cat energy">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <img class="contacts__map" src="img/location.png" alt="карта с значком логотипа cat energy">
     </section>
 
   </main>
@@ -150,12 +152,11 @@
         </a>
       </li>
     </ul>
-    <ul class="logo-list">
-      <li class="logo-item">
-        <a class="logo-link" href="#">HTML Academy</a>
-        <img src="img/html-academy.svg" alt="значок html academy">
-      </li>
-    </ul>
+    <a class="logo-link" href="#">
+      <span class="logo-link__text">HTML Academy</span>
+      <img  class="logo-link__img" src="img/html-academy.svg" alt="значок html academy">
+   </a>
   </footer>
 </body>
+
 </html>
