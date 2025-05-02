@@ -16,17 +16,17 @@
 
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item">
+          <li class="site-list__item">
             <a class="site-list-link--current" href="#">
               Главная
             </a>
           </li>
-          <li class="site-list">
+          <li class="site-list__item">
             <a class="site-list__link" href="#">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list">
+          <li class="site-list__item">
             <a class="site-list__link" href="#">
               Подбор программы
             </a>
@@ -47,23 +47,23 @@
           <fieldset class="data-cat__group">
             <p class="data-cat__field-group">
               <label class="data-cat__field-label" for="date-checkin">ИМЯ:*</label>
-              <input class="data-cat__date" type="text" id="date-checkin" name="date-checkin" placeholder="ИМЯ:"
+              <input class="data-cat__date" type="text" id="date-cat-name" name="date-checkin" placeholder="ИМЯ:"
                 value="барсик">
             </p>
             <p class="data-cat__group">
               <label class="data-cat__field-label" for="date-checkin">Вес (кг):*</label>
-              <input class="data-cat__date" type="text" id="date-checkin" name="date-checkin" placeholder="Вес (кг):"
+              <input class="data-cat__date" type="text" id="date-weight-cat" name="date-checkin" placeholder="Вес (кг):"
                 value="7">
             </p>
             <p class="data-cat__field-group">
               <label class="data-cat__field-label" for="date-checkin">Возраст (лет):</label>
-              <input class="data-cat__date" type="text" id="date-checkin" name="date-checkin"
+              <input class="data-cat__date" type="text" id="date-age-cat" name="date-checkin"
                 placeholder="Возраст (лет):" value="7">
             </p>
           </fieldset>
         </div>
       </form>
-      </div>
+
     </section>
 
     <section class="filter">
@@ -104,22 +104,22 @@
               (владельца кота)</legend>
             <p class="contacts-ownerfield-group">
               <label class="contacts-owner__field-label" for="date-checkin">E-mail:*</label>
-              <input class="contacts-owner__date" type="text" id="date-checkin" name="date-checkin"
+              <input class="contacts-owner__date" type="text" id="date-info-email" name="date-checkin"
                 placeholder="E-mail:" value="kuklachev@gmail.com">
             </p>
             <p class="contacts-owner__group">
               <label class="contacts-owner__field-label" for="date-checkin">Телефон:*</label>
-              <input class="contacts-owner__date" type="text" id="date-checkin" name="date-checkin"
+              <input class="contacts-owner__date" type="text" id="date-info-tell" name="date-checkin"
                 placeholder="Телефон:" value="8 (960) 900-60-90">
             </p>
           </fieldset>
+      </form>
     </section>
 
-    <section class="comments">
+    <div class="comments">
       <h2 class="comments__title">Комментарий</h2>
-      <input class="contacts-owner__date" type="text" id="date-checkin" name="date-checkin" placeholder="комментарий"
-        value="Расскажите обо всех повадках кота">
-    </section>
+      <textarea name="comments__subtitle" id="comments-big-text">Расскажите обо всех повадках кота</textarea>
+    </div>
 
     <section class="add-info">
       <fieldset class="add-info__group">
@@ -150,9 +150,9 @@
               <input class="visually-hidden add-info__input" type="checkbox" name="WI-FI">
               <span class="add-info__mark"></span>
               <span class="add-info__label">витамины</span>
-              <button class="add-info__button-green" type="button">отправить заявку</button>
-              <p class="add-info__text">* — Обязательные поля</p>
             </label>
+            <button class="add-info__button-green" type="button">отправить заявку</button>
+            <p class="add-info__text">* — Обязательные поля</p>
           </li>
         </ul>
       </fieldset>
@@ -160,6 +160,13 @@
   </main>
 
   <footer class="main-footer">
+
+    <section class="contacts">
+      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <img class="contacts__map" src="img/location.png" alt="карта с значком логотипа cat energy">
+    </section>
+
     <img class="name" src="img/footer-logo.svg" alt="серый логотип cat energy">
     <ul class="socials-list">
       <li class="socials-item">
