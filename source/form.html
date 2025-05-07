@@ -17,7 +17,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list-link--current" href="#">
+            <a class="site-list__link site-list__link--current" href="#">
               Главная
             </a>
           </li>
@@ -42,120 +42,115 @@
       <p class="questionnaire__subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
 
-      <form class="data-cat" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="data-cat__wrap">
-          <fieldset class="data-cat__group">
-            <p class="data-cat__field-group">
-              <label class="data-cat__field-label" for="date-checkin">ИМЯ:*</label>
-              <input class="data-cat__date" type="text" id="date-cat-name" name="date-checkin" placeholder="ИМЯ:"
-                value="барсик">
-            </p>
-            <p class="data-cat__group">
-              <label class="data-cat__field-label" for="date-checkin">Вес (кг):*</label>
-              <input class="data-cat__date" type="text" id="date-weight-cat" name="date-checkin" placeholder="Вес (кг):"
-                value="7">
-            </p>
-            <p class="data-cat__field-group">
-              <label class="data-cat__field-label" for="date-checkin">Возраст (лет):</label>
-              <input class="data-cat__date" type="text" id="date-age-cat" name="date-checkin"
-                placeholder="Возраст (лет):" value="7">
-            </p>
-          </fieldset>
-        </div>
+      <form class="form-data" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="data-cat">
+          <legend class="visually-hidden">Личные Данные</legend>
+          <p class="data-cat__field-group">
+            <label class="data-cat__field-label" for="date-cat-name">ИМЯ:*</label>
+            <input class="data-cat__date" type="text" id="date-cat-name" name="date-checkin" placeholder="ИМЯ:"
+              value="барсик">
+          </p>
+          <p class="data-cat__group">
+            <label class="data-cat__field-label" for="date-weight-cat">Вес (кг):*</label>
+            <input class="data-cat__date" type="text" id="date-weight-cat" name="date-checkin" placeholder="Вес (кг):"
+              value="7">
+          </p>
+          <p class="data-cat__field-group">
+            <label class="data-cat__field-label" for="date-age-cat">Возраст (лет):</label>
+            <input class="data-cat__date" type="text" id="date-age-cat" name="date-checkin" placeholder="Возраст (лет):"
+              value="7">
+          </p>
+        </fieldset>
+
+
+        <fieldset class="filter">
+          <legend class="visually-hidden">Контроль Веса</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="visually-hidden filter__input" type="checkbox" name="pool" checked>
+                <span class="filter__mark"></span>
+                <span class="filter__label">Похудение</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="visually-hidden filter__input" type="checkbox" name="parking">
+                <span class="filter__mark"></span>
+                <span class="filter__label">Набор массы</span>
+              </label>
+            </li>
+
+            <li class="filter__item">
+              <label class="filter__control">
+                <input class="visually-hidden filter__input" type="checkbox" name="WI-FI">
+                <span class="filter__mark"></span>
+                <span class="filter__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+        <fieldset class="contacts-owner">
+          <legend class="contacts-owner__title">Контактные данные
+            (владельца кота)</legend>
+          <p class="contacts-ownerfield-group">
+            <label class="contacts-owner__field-label" for="date-info-email">E-mail:*</label>
+            <input class="contacts-owner__date" type="text" id="date-info-email" name="date-checkin"
+              placeholder="E-mail:" value="kuklachev@gmail.com">
+          </p>
+          <p class="contacts-owner__group">
+            <label class="contacts-owner__field-label" for="date-info-tell">Телефон:*</label>
+            <input class="contacts-owner__date" type="text" id="date-info-tell" name="date-checkin"
+              placeholder="Телефон:" value="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+
+
+        <fieldset class="comments">
+          <legend class="comments__title">Комментарий</legend>
+          <textarea name="comments__subtitle" id="comments-big-text">Расскажите обо всех повадках кота</textarea>
+        </fieldset>
+
+
+        <fieldset class="add-info">
+          <legend class="add-info__title">Дополнительно</legend>
+          <ul class="add-info__list">
+            <li class="add-info__item">
+              <label class="add-info__control">
+                <input class="visually-hidden add-info__input" type="checkbox" name="pool" checked>
+                <span class="add-info__mark"></span>
+                <span class="add-info__label">сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="add-info__item">
+              <label class="add-info__control">
+                <input class="visually-hidden add-info__input" type="checkbox" name="parking">
+                <span class="add-info__mark"></span>
+                <span class="add-info__label">питьевая вода</span>
+              </label>
+            </li>
+            <li class="add-info__item">
+              <label class="add-info__control">
+                <input class="visually-hidden add-info__input" type="checkbox" name="WI-FI">
+                <span class="add-info__mark"></span>
+                <span class="add-info__label">молоко</span>
+              </label>
+            </li>
+            <li class="add-info__item">
+              <label class="add-info__control">
+                <input class="visually-hidden add-info__input" type="checkbox" name="WI-FI">
+                <span class="add-info__mark"></span>
+                <span class="add-info__label">витамины</span>
+              </label>
+            </li>
+          </ul>
+          <button class="add-info__button-green" type="button">отправить заявку</button>
+          <p class="add-info__text">* — Обязательные поля</p>
+        </fieldset>
       </form>
-
-    </section>
-
-    <section class="filter">
-      <fieldset class="filter__group">
-        <ul class="filter__list">
-          <li class="filter__item">
-            <label class="filter__control">
-              <input class="visually-hidden filter__input" type="checkbox" name="pool" checked>
-              <span class="filter__mark"></span>
-              <span class="filter__label">Похудение</span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="filter__control">
-              <input class="visually-hidden filter__input" type="checkbox" name="parking">
-              <span class="filter__mark"></span>
-              <span class="filter__label">Набор массы</span>
-            </label>
-          </li>
-
-          <li class="filter__item">
-            <label class="filter__control">
-              <input class="visually-hidden filter__input" type="checkbox" name="WI-FI">
-              <span class="filter__mark"></span>
-              <span class="filter__label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-    </section>
-
-    <section class="contacts-owner">
-      <form class="contacts-owner__cat" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="contacts-owner__wrap">
-          <fieldset class="contacts-owner__group">
-            <legend class="contacts-owner__title">Контактные данные
-              (владельца кота)</legend>
-            <p class="contacts-ownerfield-group">
-              <label class="contacts-owner__field-label" for="date-checkin">E-mail:*</label>
-              <input class="contacts-owner__date" type="text" id="date-info-email" name="date-checkin"
-                placeholder="E-mail:" value="kuklachev@gmail.com">
-            </p>
-            <p class="contacts-owner__group">
-              <label class="contacts-owner__field-label" for="date-checkin">Телефон:*</label>
-              <input class="contacts-owner__date" type="text" id="date-info-tell" name="date-checkin"
-                placeholder="Телефон:" value="8 (960) 900-60-90">
-            </p>
-          </fieldset>
-      </form>
-    </section>
-
-    <div class="comments">
-      <h2 class="comments__title">Комментарий</h2>
-      <textarea name="comments__subtitle" id="comments-big-text">Расскажите обо всех повадках кота</textarea>
-    </div>
-
-    <section class="add-info">
-      <fieldset class="add-info__group">
-        <ul class="add-info__list">
-          <li class="add-info__item">
-            <label class="add-info__control">
-              <input class="visually-hidden add-info__input" type="checkbox" name="pool" checked>
-              <span class="add-info__mark"></span>
-              <span class="add-info__label">сахарозаменитель</span>
-            </label>
-          </li>
-          <li class="add-info__item">
-            <label class="add-info__control">
-              <input class="visually-hidden add-info__input" type="checkbox" name="parking">
-              <span class="add-info__mark"></span>
-              <span class="add-info__label">питьевая вода</span>
-            </label>
-          </li>
-          <li class="add-info__item">
-            <label class="add-info__control">
-              <input class="visually-hidden add-info__input" type="checkbox" name="WI-FI">
-              <span class="add-info__mark"></span>
-              <span class="add-info__label">молоко</span>
-            </label>
-          </li>
-          <li class="add-info__item">
-            <label class="add-info__control">
-              <input class="visually-hidden add-info__input" type="checkbox" name="WI-FI">
-              <span class="add-info__mark"></span>
-              <span class="add-info__label">витамины</span>
-            </label>
-            <button class="add-info__button-green" type="button">отправить заявку</button>
-            <p class="add-info__text">* — Обязательные поля</p>
-          </li>
-        </ul>
-      </fieldset>
     </section>
   </main>
 
