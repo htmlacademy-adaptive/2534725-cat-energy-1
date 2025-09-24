@@ -6,14 +6,28 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scarlet=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/16.svg" type="image/svg+xml"> <!-- 16×16 -->
+  <link rel="icon" href="img/favicons/32.svg" type="image/svg+xml"> <!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/152.svg"> <!-- 152×152 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <base href="https://htmlacademy-adaptive.github.io/2534725-cat-energy-1/6/">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img src="img/logo-desktop.svg" width="202" height="59" alt="HTML Academy: Кэт энерджи">
+    <a class="main-header__logo logo" href="#">
+      <picture>
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg" width="60" height="50">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="70" height="59">
+        <img src="img/logo-mobile.svg" alt="лого" width="33" height="38">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+        <img class="contacts__map" src="img/logo-text-mobile.svg" alt="лого" width="101" height="18">
+      </picture>
     </a>
+
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -48,8 +62,8 @@
               <source media="(min-width: 768px) and (max-width: 1439px)"
                 srcset="img/tablet-chicken.png, img/tablet-chicken@2x.png 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-chicken.png, img/desktop-chicken@2x.png 2x">
-              <img src="img/mobile-chicken.png" srcset="img/mobile-chicken.png, img/mobile-chicken@2x.png 2x"
-                alt="Энергетическая еда со вкусом курицы">
+              <img src="img/mobile-chicken.png" width="68" height="86"
+                srcset="img/mobile-chicken.png, img/mobile-chicken@2x.png 2x" alt="Энергетическая еда со вкусом курицы">
             </picture>
             <h2 class="transfer__subtitle">Cat Energy PRO 500 г</h2>
             <dl class="transfer__text">
@@ -76,7 +90,7 @@
                 srcset="img/tablet-big-chicken.png, img/tablet-big-chicken@2x.png 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/desktop-big-chicken.png, img/desktop-big-chicken@2x.png 2x">
-              <img src="img/mobile-big-chicken.png"
+              <img src="img/mobile-big-chicken.png" width="84" height="100"
                 srcset="img/mobile-big-chicken.png, img/mobile-big-chicken@2x.png 2x"
                 alt="Энергетическая еда со вкусом курицы">
             </picture>
@@ -104,8 +118,8 @@
               <source media="(min-width: 768px) and (max-width: 1439px)"
                 srcset="img/tablet-fish.png, img/tablet-fish@2x.png 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-fish.png, img/desktop-fish@2x.png 2x">
-              <img src="img/mobile-fish.png" srcset="img/mobile-fish.png, img/mobile-fish@2x.png 2x"
-                alt="Энергетическая еда со вкусом курицы">
+              <img src="img/mobile-fish.png" width="68" height="78"
+                srcset="img/mobile-fish.png, img/mobile-fish@2x.png 2x" alt="Энергетическая еда со вкусом курицы">
             </picture>
             <h2 class="transfer__subtitle">Cat Energy PRO 500 г</h2>
             <dl class="transfer__text">
@@ -131,7 +145,8 @@
               <source media="(min-width: 768px) and (max-width: 1439px)"
                 srcset="img/tablet-big-fish.png, img/tablet-big-fish@2x.png 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-big-fish.png, img/desktop-big-fish@2x.png 2x">
-              <img src="img/mobile-big-fish.png" srcset="img/mobile-big-fish.png, img/mobile-big-fish@2x.png 2x"
+              <img src="img/mobile-big-fish.png" width="84" height="100"
+                srcset="img/mobile-big-fish.png, img/mobile-big-fish@2x.png 2x"
                 alt="Энергетическая еда со вкусом рыбой">
             </picture>
             <h2 class="transfer__subtitle">Cat Energy PRO 1000 г</h2>
@@ -158,7 +173,8 @@
               <source media="(min-width: 768px) and (max-width: 1439px)"
                 srcset="img/tablet-buckwheat.png, img/tablet-buckwheat@2x.png 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-buckwheat.png, img/desktop-buckwheat@2x.png 2x">
-              <img src="img/mobile-buckwheat.png" srcset="img/mobile-buckwheat.png, img/mobile-buckwheat@2x.png 2x"
+              <img src="img/mobile-buckwheat.png" width="68" height="78"
+                srcset="img/mobile-buckwheat.png, img/mobile-buckwheat@2x.png 2x"
                 alt="Энергетическая еда со вкусом гречки">
             </picture>
             <h2 class="transfer__subtitle">Cat Energy PRO 500 г</h2>
@@ -186,7 +202,7 @@
                 srcset="img/tablet-big-buckwheat.png, img/tablet-big-buckwheat@2x.png 2x">
               <source media="(min-width: 1440px)"
                 srcset="img/desktop-big-buckwheat.png, img/desktop-big-buckwheat@2x.png 2x">
-              <img src="img/mobile-big-buckwheat.png"
+              <img src="img/mobile-big-buckwheat.png" width="84" height="100"
                 srcset="img/mobile-big-buckwheat.png, img/mobile-big-buckwheat@2x.png 2x"
                 alt="Энергетическая еда со вкусом гречки">
             </picture>
@@ -214,8 +230,8 @@
               <source media="(min-width: 768px) and (max-width: 1439px)"
                 srcset="img/tablet-rice.png, img/tablet-rice@2x.png 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-rice.png, img/desktop-rice@2x.png 2x">
-              <img src="img/mobile-rice.png" srcset="img/mobile-rice.png, img/mobile-rice@2x.png 2x"
-                alt="Энергетическая еда со вкусом риса">
+              <img src="img/mobile-rice.png" width="72" height="84"
+                srcset="img/mobile-rice.png, img/mobile-rice@2x.png 2x" alt="Энергетическая еда со вкусом риса">
             </picture>
             <h2 class="transfer__subtitle">Cat Energy PRO 500 г</h2>
             <dl class="transfer__text">
@@ -277,8 +293,14 @@
       </section>
 
       <aside class="gift">
-        <img class="gift__background" width="279" height="289" src="img/cat-in-a-backpack.jpg" alt="кот в рюкзаке">
-        <img class="gift__thumb" width="78" height="81" src="img/surprise.svg" alt="подарок">
+        <picture>
+          <source media="(min-width: 768px) and (max-width: 1439px)"
+            srcset="img/tablet-cat-backpack.jpg , img/tablet-cat-backpack@2x.jpg 2x">
+          <source media="(min-width: 1440px)"
+            srcset="img/img/desktop-cat-backpack.jpg, img/desktop-cat-backpack@2x.jpg 2x">
+          <img src="img/mobile-cat-backpack.jpg" width="280" height="270"
+            srcset="img/img/mobile-cat-backpack.jpg, img/mobile-cat-backpack@2x.jpg 2x" alt="кот в рюкзаке">
+        </picture>
         <p class="gift__text">Закажите все
           и получите чехол для
           кота в подарок!</p>

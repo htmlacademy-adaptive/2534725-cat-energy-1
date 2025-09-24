@@ -18,13 +18,13 @@
   <header class="main-header">
     <a class="main-header__logo logo" href="#">
       <picture>
-        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg">
-        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-        <img src="img/logo-mobile.svg" alt="лого">
+        <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/logo-tablet.svg" width="60" height="50">
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="70" height="59">
+        <img src="img/logo-mobile.svg" alt="лого" width="33" height="38">
       </picture>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg">
-        <img src="img/logo-text-mobile.svg" alt="лого">
+        <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
+        <img class="contacts__map" src="img/logo-text-mobile.svg" alt="лого" width="101" height="18">
       </picture>
     </a>
 
@@ -57,8 +57,14 @@
     <section class="preview">
       <h1 class="preview__main-title">Функциональное питание для котов</h1>
       <p class="preview__subtitle">Занялся собой? Займись котом!</p>
-      <img class="preview__nutrition" width="280" height="270" src="img/health-food.png"
-        alt="еда для кошек со вкусом курицы">
+      <picture>
+        <source media="(min-width: 768px) and (max-width: 1439px)"
+          srcset="img/tablet-can-of-feed.png , img/tablet-can-of-feed@2x.png 2x">
+        <source media="(min-width: 1440px)" srcset="img/img/desktop-can-of-feed.png, img/desktop-can-of-feed@2x.png 2x">
+        <img src="img/mobile-can-of-feed.png" width="280" height="270"
+          srcset="img/img/mobile-can-of-feed.png, img/mobile-can-of-feed@2x.png 2x"
+          alt="банка с кормом со вкусом курицы">
+      </picture>
       <button class="button-all" type="button">подобрать программу</button>
     </section>
 
@@ -137,11 +143,13 @@
       <div class="pic-wrapper">
         <picture>
           <source media="(min-width: 768px)" srcset="img/cat-fat-desktop.jpg, img/cat-fat-desktop@2x.jpg 2x">
-          <img src="img/cat-fat-mobile.jpg" srcset="img/cat-fat-mobile.jpg, img/cat-fat-mobile@2x.jpg 2x" alt="лого">
+          <img src="img/cat-fat-mobile.jpg" width="280" height="256"
+            srcset="img/cat-fat-mobile.jpg, img/cat-fat-mobile@2x.jpg 2x" alt="лого">
         </picture>
         <picture>
           <source media="(min-width: 768px)" srcset="img/cat-thin-desktop.jpg, img/cat-thin-desktop@2x.jpg 2x">
-          <img src="img/cat-thin-mobile.jpg" srcset="img/cat-thin-mobile.jpg, img/cat-thin-mobile@2x.jpg 2x" alt="лого">
+          <img src="img/cat-thin-mobile.jpg" width="280" height="256"
+            srcset="img/cat-thin-mobile.jpg, img/cat-thin-mobile@2x.jpg 2x" alt="лого">
         </picture>
       </div>
       <button class="example__slider"></button>
@@ -157,7 +165,7 @@
       <picture>
         <source media="(min-width: 768px) and (max-width: 1439px)" srcset="img/map-tablet.jpg">
         <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg">
-        <img src="img/map-mobile.jpg" alt="лого">
+        <img src="img/map-mobile.jpg" width="320" height="362" alt="лого">
       </picture>
     </section>
 

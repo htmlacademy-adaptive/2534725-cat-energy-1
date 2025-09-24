@@ -41,7 +41,9 @@
   background-color: #ffffff;
 }
 .main-header__logo {
-  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media (min-width: 1440px) {
   .main-header__logo {
@@ -119,9 +121,8 @@
   font-family: "Oswald", sans-serif;
 }
 .preview {
-  background-color: rgba(104, 183, 56, 0.85);
-  background-image: -webkit-image-set(url("../../img/background-cat.jpg") 1x, url("../../img/background-cat@2x.jpg") 2x);
-  background-image: image-set(url("../../img/background-cat.jpg") 1x, url("../../img/background-cat@2x.jpg") 2x);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), -webkit-image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -288,6 +289,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+picture {
+  display: contents;
+}
+.contacts__map {
+  grid-column: span 2;
 }
 .questionnaire__title {
   color: #000000;
