@@ -121,8 +121,10 @@
   font-family: "Oswald", sans-serif;
 }
 .preview {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), -webkit-image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat.jpg") 1, url("../../img/background-cat@2x.jpg") 2);
+  /* stylelint-disable unit-no-unknown */
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), -webkit-image-set(url("../../img/background-cat.jpg") 1x, url("../../img/background-cat@2x.jpg") 2x);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat.jpg") 1x, url("../../img/background-cat@2x.jpg") 2x);
+  /* stylelint-enable unit-no-unknown */
   background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
@@ -132,9 +134,10 @@
 }
 @media (min-width: 1440px) {
   .preview {
-    background-color: rgba(104, 183, 56, 0.85);
-    background-image: -webkit-image-set(url("../../img/background-cat-desktop.jpg") 1x, url("../../img/background-cat-desktop@2x.jpg") 2x);
-    background-image: image-set(url("../../img/background-cat-desktop.jpg") 1x, url("../../img/background-cat-desktop@2x.jpg") 2x);
+    /* stylelint-disable unit-no-unknown */
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), -webkit-image-set(url("../../img/background-cat-desktop.jpg") 1x, url("../../img/background-cat-desktop@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat-desktop.jpg") 1x, url("../../img/background-cat-desktop@2x.jpg") 2x);
+    /* stylelint-enable unit-no-unknown */
     background-repeat: no-repeat;
   }
 }
@@ -295,6 +298,7 @@ picture {
 }
 .contacts__map {
   grid-column: span 2;
+  width: 100%;
 }
 .questionnaire__title {
   color: #000000;
