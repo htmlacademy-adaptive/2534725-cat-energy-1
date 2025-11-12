@@ -1,23 +1,64 @@
+.transfer__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img text"
+    "button button";
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.transfer__pic {
+  grid-area: img;
+  align-self: center;
+  justify-self: center;
+}
+
+.transfer__info {
+  grid-area: text;
+}
+
+.transfer__text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  dd {
+    margin: 0;
+    justify-self: end;
+  }
+}
+
 .transfer__subtitle {
   color: @special-color;
   font-family: @accent-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.transfer__button {
+  grid-area: button;
+  margin-top: 17px;
+  padding: 10px 20px;
+  font-family: @accent-font;
+  color: @fancy-color;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #68B738;
 }
 
 .transfer__headline {
   color: @special-color;
   font-family: @accent-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
 }
-
-.transfer__text {
-  color: @back-color;
-  font-family: @base-font;
-}
-
-.transfer__button {
-  background-color: #68b738;
-  font-family: @accent-font;
-}
-
 
 .transfer__list {
   .list-reset();
