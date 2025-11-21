@@ -8,7 +8,34 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 25px;
+
+  &--more {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "subtitle"
+      "text"
+      "button";
+    text-align: center;
+    padding-top: 78px;
+    background-image: url("../../img/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center top 10px;
+
+    .transfer__subtitle {
+      max-width: initial;
+    }
+
+    .transfer__text {
+      grid-template-columns: 1fr;
+    }
+
+    .transfer__button {
+      background-color: #f2f2f2;
+      color: @back-color;
+    }
+  }
 }
+
 
 .transfer__pic {
   grid-area: img;
@@ -30,17 +57,21 @@
 
   dd {
     margin: 0;
-    justify-self: end;
+    text-align: right;
   }
 }
 
 .transfer__subtitle {
+  grid-area: subtitle;
   color: @special-color;
   font-family: @accent-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-transform: uppercase;
+  max-width: 76px;
+  margin: 0;
+  margin-bottom: 14px;
 }
 
 .transfer__button {
@@ -62,6 +93,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 100%;
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 41px;
 }
 
 .transfer__list {
@@ -69,23 +104,78 @@
 }
 
 @media (min-width: @tablet-width) {
+  .transfer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .transfer__card {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "text"
+      "button";
+    background-image: linear-gradient(#ffffff, #ffffff 81px, #f2f2f2 81px, #f2f2f2);
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    padding-top: 0;
+
+    &--more {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "subtitle"
+        "text"
+        "button";
+      text-align: center;
+      padding-top: 205px;
+      background-image: url("../../img/plus.svg");
+      background-repeat: no-repeat;
+      background-position: center top 110px;
+      border: 1px solid #d3d3d3;
+
+      .transfer__subtitle {
+        max-width: 120px;
+      }
+
+      .transfer__text {
+        grid-template-columns: 1fr;
+        max-width: 140px;
+        justify-self: center;
+      }
+
+      .transfer__button {
+        background-color: #f2f2f2;
+        color: @back-color;
+      }
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .transfer__subtitle {
-    text-align: center;
+    justify-self: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .transfer__text {
+    dt {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    dd {
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .transfer__list {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 80px;
-    padding-top: 80px;
   }
 }
