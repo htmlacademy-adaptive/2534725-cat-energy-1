@@ -1,21 +1,49 @@
+.extra-info__card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "subtitle subtitle"
+    "text price"
+    "button button";
+}
+
 .extra-info__title {
   color: @side-color;
   font-family: @accent-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  padding-left: 20px;
 }
 
 .extra-info__subtitle {
   color: #222222;
   font-family: @accent-font;
+  grid-area: subtitle;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
 .extra-info__text {
   color: @back-color;
   font-family: @base-font;
+  grid-area: text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
 }
 
 .extra-info__text-price {
   color: @back-color;
   font-family: @base-font;
+  grid-area: price;
+  text-align: right;
+  font-size: 14px;
+  line-height: 100%;
 }
 
 .extra-info__list {
@@ -23,6 +51,94 @@
 }
 
 .extra-info__button {
-  background-color: rgba(104, 183, 56, 1);
+  grid-area: button;
+  margin-top: 17px;
+  padding: 10px 20px;
   font-family: @accent-font;
+  color: @fancy-color;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #6bd738;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .extra-info__card {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "subtitle text price"
+      "button button button";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra-info__text-price {
+    grid-area: price;
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra-info__text {
+    grid-area: text;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .extra-info__subtitle {
+    grid-area: subtitle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-info__card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+  "subtitle text price button";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-info__text-price {
+    grid-area: price;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-info__text {
+    grid-area: text;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-info__subtitle {
+    grid-area: subtitle;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
