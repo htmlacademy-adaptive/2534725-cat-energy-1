@@ -25,6 +25,8 @@
   font-size: 16px;
   line-height: 100%;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
 }
 
 .extra-info__text {
@@ -35,6 +37,7 @@
   font-size: 14px;
   line-height: 100%;
   text-align: left;
+  margin: 0;
 }
 
 .extra-info__text-price {
@@ -44,6 +47,7 @@
   text-align: right;
   font-size: 14px;
   line-height: 100%;
+  margin: 0;
 }
 
 .extra-info__list {
@@ -66,10 +70,11 @@
 
 @media (min-width: @tablet-width) {
   .extra-info__card {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 90px;
     grid-template-areas:
       "subtitle text price"
       "button button button";
+    align-items: center;
   }
 }
 
@@ -100,9 +105,17 @@
     font-size: 20px;
     line-height: 100%;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 0;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .extra-info__button {
+    margin-top: 21px;
+  }
+}
+
 
 @media (min-width: @desktop-width) {
   .extra-info__card {
