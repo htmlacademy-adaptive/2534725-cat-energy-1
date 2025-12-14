@@ -10,64 +10,61 @@
     background-position: center top 60px, top left;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
   }
 }
 
 .gift__pic {
+  position: absolute;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 
 .gift__text {
+  position: relative;
   font-family: @base-font;
-  position: absolute;
   color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
   text-align: center;
   max-width: 160px;
-  top: 187px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
-  z-index: 2;
+  padding: 200px 0 30px;
+  z-index: 3;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 264px;
-
     &::after {
-      grid-column: 1/2;
-      grid-row: 1/2;
+      background-position: center left 120px, top left;
     }
   }
 }
 
-
 @media (min-width: @tablet-width) {
   .gift__text {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 100px 20px;
+    max-width: 250px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .gift__pic {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 264px;
+@media (min-width: @desktop-width) {
+  .gift {
+    margin-left: 80px;
   }
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .gift__pic {
-    grid-column: 1/ -1;
+
   }
 }
