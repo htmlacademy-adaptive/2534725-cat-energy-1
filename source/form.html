@@ -23,7 +23,7 @@
       </picture>
       <picture>
         <source media="(min-width: 1440px)" srcset="img/logo-text-desktop.svg" width="118" height="21">
-        <img class="contacts__map" src="img/logo-text-mobile.svg" alt="лого" width="101" height="18">
+        <img src="img/logo-text-mobile.svg" alt="лого" width="101" height="18">
       </picture>
     </a>
 
@@ -85,7 +85,7 @@
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="filter__control">
-                  <input class="visually-hidden filter__input" type="radio" name="pool" checked>
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="pool" checked>
                   <span class="filter__mark"></span>
                   <span class="filter__label">Похудение</span>
                 </label>
@@ -93,7 +93,7 @@
 
               <li class="filter__item">
                 <label class="filter__control">
-                  <input class="visually-hidden filter__input" type="radio" name="parking">
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="parking">
                   <span class="filter__mark"></span>
                   <span class="filter__label">Набор массы</span>
                 </label>
@@ -101,7 +101,7 @@
 
               <li class="filter__item">
                 <label class="filter__control">
-                  <input class="visually-hidden filter__input" type="radio" name="WI-FI">
+                  <input class="visually-hidden filter__input" type="radio" name="weight" value="WI-FI">
                   <span class="filter__mark"></span>
                   <span class="filter__label">Не знаю (Нужен ваш совет)</span>
                 </label>
@@ -116,12 +116,12 @@
             (владельца кота)</legend>
           <p class="contacts-owner__field-group">
             <label class="contacts-owner__field-label" for="date-info-email">E-mail:*</label>
-            <input class="contacts-owner__date" type="text" id="date-info-email" name="date-checkin"
+            <input class="contacts-owner__date-one" type="text" id="date-info-email" name="date-checkin"
               placeholder="E-mail:" value="kuklachev@gmail.com">
           </p>
           <p class="contacts-owner__group">
             <label class="contacts-owner__field-label" for="date-info-tell">Телефон:*</label>
-            <input class="contacts-owner__date" type="text" id="date-info-tell" name="date-checkin"
+            <input class="contacts-owner__date-two" type="text" id="date-info-tell" name="date-checkin"
               placeholder="Телефон:" value="8 (960) 900-60-90">
           </p>
         </fieldset>
@@ -129,7 +129,7 @@
 
         <fieldset class="comments">
           <legend class="comments__title">Комментарий</legend>
-          <textarea name="comments__subtitle" id="comments-big-text">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comments__subtitle" name="comments__subtitle" id="comments-big-text" >Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
 

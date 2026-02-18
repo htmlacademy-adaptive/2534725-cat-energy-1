@@ -1,8 +1,46 @@
+.filter {
+  border: none;
+}
+
+.filter__control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 13px;
+}
+
 .filter__label {
   color: @back-color;
   font-family: @accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
 }
 
 .filter__list {
   .list-reset();
+}
+
+.filter__input:checked + .filter__mark::after {
+  background-color: #68b738;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.filter__mark {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
