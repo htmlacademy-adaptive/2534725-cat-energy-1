@@ -8,36 +8,60 @@
 }
 
 .contacts-owner__field-group {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   color: @back-color;
   font-family: @accent-font;
+  font-size: 16px;
+  line-height: 113%;
+  text-transform: uppercase;
 }
 
 .contacts-owner__field-label {
-  color: @back-color;
-  font-family: @accent-font;
   font-size: 16px;
   line-height: 113%;
   text-transform: uppercase;
+  color: @side-color;
+  font-family: @accent-font;
 }
 
-.contacts-owner__date-one {
-  width: 217px;
-  height: 45px;
+.contacts-owner__email {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   color: @back-color;
   font-family: @accent-font;
   font-size: 16px;
   line-height: 113%;
   text-transform: uppercase;
+  background-image: url("../../img/envelope.svg");
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  box-sizing: border-box;
 }
 
-.contacts-owner__date-two {
-  width: 200px;
-  height: 45px;
+.contacts-owner__tel {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 14px;
+  padding-bottom: 13px;
   color: @back-color;
   font-family: @accent-font;
   font-size: 16px;
   line-height: 113%;
   text-transform: uppercase;
+  background-image: url("../../img/tube.svg");
+  background-position: center right 10px;
+  background-repeat: no-repeat;
+  border: 1px solid;
+  box-sizing: border-box;
 }
 
 @media (min-width: @desktop-width) {
