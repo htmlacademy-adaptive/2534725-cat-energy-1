@@ -60,8 +60,8 @@
 
       <form class="form-data" action="https://echo.htmlacademy.ru/" method="get">
         <div class="wrapper">
-          <fieldset class="data-cat">
-            <legend class="visually-hidden">Личные Данные</legend>
+          <section class="data-cat">
+            <h3 class="visually-hidden">Личные Данные</h3>
             <p class="data-cat__group">
               <label class="data-cat__field-label" for="date-cat-name">ИМЯ:*</label>
               <input class="data-cat__date" type="text" id="date-cat-name" name="date-checkin" placeholder="ИМЯ:"
@@ -77,7 +77,7 @@
               <input class="data-cat__date-three" type="text" id="date-age-cat" name="date-checkin"
                 placeholder="Возраст (лет):" value="7">
             </p>
-          </fieldset>
+          </section>
 
 
           <section class="filter">
@@ -111,9 +111,10 @@
         </div>
 
 
-        <fieldset class="contacts-owner">
-          <legend class="contacts-owner__title">Контактные данные
-            (владельца кота)</legend>
+        <section class="contacts-owner">
+          <h3 class="contacts-owner__title">Контактные данные
+            (владельца кота)</h3>
+            <div class="contacts-owner__wrapper">
           <p class="contacts-owner__field-group">
             <label class="contacts-owner__field-label" for="date-info-email">E&#8209mail:*</label>
             <input class="contacts-owner__email" type="text" id="date-info-email" name="date-checkin"
@@ -124,17 +125,18 @@
             <input class="contacts-owner__tel" type="text" id="date-info-tell" name="date-checkin"
               placeholder="Телефон:" value="8 (960) 900-60-90">
           </p>
-        </fieldset>
+        </div>
+        </section>
 
 
-        <fieldset class="comments">
-          <legend class="comments__title">Комментарий</legend>
-          <textarea class="comments__subtitle" name="comments__subtitle" id="comments-big-text" >Расскажите обо всех повадках кота</textarea>
-        </fieldset>
+        <section class="comments">
+          <h3 class="comments__title">Комментарий</h3>
+          <textarea class="comments__text" name="comments__subtitle" id="comments-big-text" >Расскажите обо всех повадках кота</textarea>
+        </section>
 
 
-        <fieldset class="add-info">
-          <legend class="add-info__title">Дополнительно</legend>
+        <section class="add-info">
+          <h3 class="add-info__title">Дополнительно</h3>
           <ul class="add-info__list">
             <li class="add-info__item">
               <label class="add-info__control">
@@ -165,10 +167,10 @@
               </label>
             </li>
           </ul>
-        </fieldset>
-        <div class="button-green">
-          <button class="button-green__button" type="button">отправить заявку</button>
-          <p class="button-green__text">* — Обязательные поля</p>
+        </section>
+        <div class="form-data__wrapper">
+          <button class="button-green" type="button">отправить заявку</button>
+          <p class="form-data__text">* — Обязательные поля</p>
         </div>
       </form>
     </section>

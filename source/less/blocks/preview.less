@@ -1,15 +1,32 @@
 .preview__main-title {
   color: @fancy-color;
   font-family: @accent-font;
+  text-align: center;
+  max-width: 100%;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
 }
 
-
-.preview__subtitle {
+.preview__main-subtitle {
   color: @fancy-color;
   font-family: @accent-font;
+  text-align: center;
 }
 
 .preview {
+  position: relative;
+}
+
+.preview::after {
+  content: "";
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 198px;
+  z-index: -1;
   /* stylelint-disable unit-no-unknown */
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat.jpg") 1x, url("../../img/background-cat@2x.jpg") 2x);
   /* stylelint-enable unit-no-unknown */

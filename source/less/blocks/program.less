@@ -1,11 +1,12 @@
 .program {
-  padding-bottom: 30px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 30px 20px 18px 20px;
 }
 
 .program--slim {
   background-image: url("../../img/mobile-cat-back.svg");
   background-repeat: no-repeat;
-  padding-bottom: 30px;
+  background-position: top 21px left 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +25,7 @@
 .program--fat {
   background-image: url("../../img/mobile-panther-back.svg");
   background-repeat: no-repeat;
+  background-position: top 21px left 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,8 +45,9 @@
 .program__second-title {
   color: @side-color;
   font-family: @accent-font;
-  text-align: center;
-  padding-top: 30px;
+  padding-left: 80px;
+  margin-top: 0;
+  margin-bottom: 29px;
   font-weight: 400;
   font-size: 24px;
   line-height: 154%;
@@ -54,9 +57,10 @@
 .program__action {
   color: @back-color;
   font-family: @base-font;
-  padding-top: 29px;
-  padding-left: 20px;
   padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .program__link {
@@ -68,7 +72,6 @@
   background-position: right center;
   background-repeat: no-repeat;
   text-decoration: none;
-  padding-left: 20px;
   text-transform: uppercase;
 }
 

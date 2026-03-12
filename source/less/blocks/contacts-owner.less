@@ -1,6 +1,6 @@
 .contacts-owner {
   border: none;
-  padding: 10px 20px;
+  margin: 10px 20px;
 }
 
 .contacts-owner__title {
@@ -64,8 +64,15 @@
   box-sizing: border-box;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .contacts-owner {
+    margin: 65px 70px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contacts-owner__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 81px;

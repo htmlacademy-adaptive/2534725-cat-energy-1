@@ -1,15 +1,38 @@
+.explanation {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.explanation__list {
+  display: grid;
+  gap: 24px;
+}
+
+.explanation__item {
+  padding-left: 80px;
+  color: @back-color;
+  font-family: @base-font;
+  font-size: 14px;
+  line-height: 129%;
+}
+
 .explanation__title {
   color: @side-color;
   font-family: @accent-font;
+  font-size: 36px;
+  line-height: 111%;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .explanation__text {
   color: @back-color;
   font-family: @base-font;
-}
-
-.explanation__list {
-  .list-reset();
+  font-size: 14px;
+  line-height: 129%;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {

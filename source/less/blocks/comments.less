@@ -1,5 +1,6 @@
 .comments {
   border: none;
+  margin: 0 20px;
 }
 
 .comments__title {
@@ -11,7 +12,7 @@
   padding-bottom: 38px;
 }
 
-.comments__subtitle {
+.comments__text {
   color: @back-color;
   font-family: @accent-font;
   font-weight: 400;
@@ -19,6 +20,21 @@
   line-height: 112%;
   text-transform: uppercase;
   width: 100%;
-  height: 150px;
+  min-height: 150px;
   resize: vertical;
+  box-sizing: border-box;
+  padding: 14px 15px;
+  border: 1px solid #e7e7e7;
+}
+
+@media (min-width: @tablet-width) {
+  .comments__text {
+    padding: 20px 27px 14px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .comments {
+    margin: 70px 70px;
+  }
 }

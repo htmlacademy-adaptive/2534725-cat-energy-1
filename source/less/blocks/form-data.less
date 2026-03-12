@@ -2,3 +2,32 @@
   color: @side-color;
   font-family: @accent-font;
 }
+
+.form-data__wrapper {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.form-data__text {
+  font-family: @base-font;
+  color: @side-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+}
+
+@media (min-width: @tablet-width) {
+  .form-data__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin: 52px 70px;
+    align-items: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-data__text {
+    text-align: left;
+  }
+}
