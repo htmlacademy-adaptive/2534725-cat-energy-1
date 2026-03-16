@@ -6,6 +6,7 @@
 }
 
 .explanation__list {
+  .list-reset();
   display: grid;
   gap: 24px;
 }
@@ -37,9 +38,15 @@
 
 @media (min-width: @tablet-width) {
   .explanation__list {
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 32px;
+    gap: 153px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .explanation__item {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
@@ -69,6 +76,8 @@
 @media (min-width: @tablet-width) {
   .explanation__item__chemicals {
     background-image: url("../../img/tablet-chemicals.svg");
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -80,6 +89,8 @@
 @media (min-width: @tablet-width) {
   .explanation__item__devices {
     background-image: url("../../img/tablet-devices.svg");
+    width: 80px;
+    height: 80px;
   }
 }
 
@@ -91,5 +102,7 @@
 @media (min-width: @tablet-width) {
   .explanation__item__time {
     background-image: url("../../img/tablet-time.svg");
+    width: 80px;
+    height: 80px;
   }
 }
