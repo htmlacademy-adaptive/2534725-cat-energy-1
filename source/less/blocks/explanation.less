@@ -44,9 +44,32 @@
 }
 
 @media (min-width: @tablet-width) {
+  .explanation__list::after {
+    counter-increment: section; /* Инкрементирует счётчик*/
+    content: "Секция " counter(section) ": ";
+  }
+}
+
+@media (min-width: @tablet-width) {
+  ul {
+    counter-reset: section; /* Создаёт новый счётчик для каждого тега <ol> */
+    list-style-type: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  li {
+    counter-increment: section;
+    content: counters(section, ".") " ";
+  }
+}
+
+@media (min-width: @tablet-width) {
   .explanation__item {
     font-size: 16px;
     line-height: 150%;
+    padding-left: 0;
+    padding-top: 100px;
   }
 }
 
@@ -76,8 +99,7 @@
 @media (min-width: @tablet-width) {
   .explanation__item__chemicals {
     background-image: url("../../img/tablet-chemicals.svg");
-    width: 80px;
-    height: 80px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -89,8 +111,7 @@
 @media (min-width: @tablet-width) {
   .explanation__item__devices {
     background-image: url("../../img/tablet-devices.svg");
-    width: 80px;
-    height: 80px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -102,7 +123,6 @@
 @media (min-width: @tablet-width) {
   .explanation__item__time {
     background-image: url("../../img/tablet-time.svg");
-    width: 80px;
-    height: 80px;
+    background-repeat: no-repeat;
   }
 }
