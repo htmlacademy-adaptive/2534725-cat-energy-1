@@ -3,7 +3,6 @@
   text-transform: uppercase;
 }
 
-
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -36,7 +35,7 @@
     0 16px 0 0 opacify(#ffffff, 0.3);
 }
 
-@media (max-width: $mobile-width-only) {
+@media (min-width: @tablet-width) {
   .main-nav--closed .site-list__item {
     display: none;
 
@@ -134,16 +133,17 @@
 }
 
 .site-list a {
+  font-family: @accent-font;
+  text-align: center;
   position: relative;
   display: block;
   padding: 13px 21px;
   padding-bottom: 13px;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
   color: @side-color;
   text-transform: uppercase;
   text-decoration: none;
   background-color: @fancy-color;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid @border-color;
 }

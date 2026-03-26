@@ -43,26 +43,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .explanation__list::after {
-    counter-increment: section; /* Инкрементирует счётчик*/
-    content: "Секция " counter(section) ": ";
-  }
-}
-
-@media (min-width: @tablet-width) {
-  ul {
-    counter-reset: section; /* Создаёт новый счётчик для каждого тега <ol> */
-    list-style-type: none;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  li {
-    counter-increment: section;
-    content: counters(section, ".") " ";
-  }
-}
 
 @media (min-width: @tablet-width) {
   .explanation__item {
@@ -73,6 +53,40 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .explanation__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 153px;
+
+    counter-reset: number-item;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .explanation__item {
+    position: relative;
+    font-size: 16px;
+    line-height: 150%;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .explanation__item::after {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    z-index: -1;
+    counter-increment: number-item;
+    content: counter(number-item);
+    font-family: @accent-font;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 100%;
+    color: #f2f2f2;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .explanation__list {
     display: flex;
@@ -80,48 +94,48 @@
   }
 }
 
-.explanation__item__leaflet {
+.explanation__item--leaflet {
   background-image: url("../../img/mobile-leaflet.svg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .explanation__item__leaflet {
+  .explanation__item--eaflet {
     background-image: url("../../img/tablet-leaflet.svg");
   }
 }
 
-.explanation__item__chemicals {
+.explanation__item--chemicals {
   background-image: url("../../img/mobile-chemicals.svg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .explanation__item__chemicals {
+  .explanation__item--chemicals {
     background-image: url("../../img/tablet-chemicals.svg");
     background-repeat: no-repeat;
   }
 }
 
-.explanation__item__devices {
+.explanation__item--devices {
   background-image: url("../../img/mobile-devices.svg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .explanation__item__devices {
+  .explanation__item--devices {
     background-image: url("../../img/tablet-devices.svg");
     background-repeat: no-repeat;
   }
 }
 
-.explanation__item__time {
+.explanation__item--time {
   background-image: url("../../img/mobile-time.svg");
   background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
-  .explanation__item__time {
+  .explanation__item--time {
     background-image: url("../../img/tablet-time.svg");
     background-repeat: no-repeat;
   }
