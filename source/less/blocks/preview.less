@@ -19,7 +19,7 @@
 }
 
 
-.preview::after {
+.preview::before {
   content: "";
   position: absolute;
   background-size: cover;
@@ -38,9 +38,9 @@
   .preview {
     background: none;
     padding-bottom: 526px;
-    padding-top: 50px;
+    padding-top: 65px;
     padding-left: 120px;
-    padding-right: 404px;
+    padding-right: 230px;
   }
 }
 
@@ -50,6 +50,8 @@
     color: @side-color;
     font-size: 60px;
     line-height: 100%;
+    margin: 0;
+    text-align: left;
   }
 }
 
@@ -61,11 +63,14 @@
     line-height: 100%;
     text-transform: uppercase;
     white-space: nowrap;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .preview::after {
+  .preview::before {
     content: none;
   }
 }
@@ -84,10 +89,38 @@
 }
 
 @media (min-width: @desktop-width) {
-  .preview {
+  .preview::before {
+    content: "";
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    z-index: -1;
     /* stylelint-disable unit-no-unknown */
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../img/background-cat-desktop.jpg") 1x, url("../../img/background-cat-desktop@2x.jpg") 2x);
     /* stylelint-enable unit-no-unknown */
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .preview__img {
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    right: 331px;
+    top: 143px;
+    left: auto;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .preview__main-title {
+    font-family: @accent-font;
+    color: @side-color;
+    margin: 0;
+    text-align: left;
+    max-width: 50%;
   }
 }
