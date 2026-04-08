@@ -2,11 +2,33 @@
   .list-reset();
 }
 
+.site-list__link {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site-list a {
+  font-family: @accent-font;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 13px 21px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 24px;
+  color: @side-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: @fancy-color;
+  border-top: 1px solid @border-color;
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
     justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 436px;
+    gap: 33px;
   }
 }
