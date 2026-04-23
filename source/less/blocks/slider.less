@@ -1,6 +1,7 @@
 .slider {
   position: relative;
   width: 280px;
+  height: 256px;
   margin: 0 auto;
 }
 
@@ -29,7 +30,7 @@
 
 .slider__image-before {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -72,9 +73,26 @@
   box-sizing: border-box;
 }
 
+@media (min-width: @tablet-width) {
+  .slider__before,
+  .slider__after {
+    background-color: unset;
+    background-image: linear-gradient(to top, #eaeaea 360px, @fancy-color 360px);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__before,
+  .slider__after {
+    background-color: unset;
+    background-image: linear-gradient(to top, #eaeaea 375px, @fancy-color 375px);
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .slider {
     width: 560px;
+    height: 512px;
   }
 }
