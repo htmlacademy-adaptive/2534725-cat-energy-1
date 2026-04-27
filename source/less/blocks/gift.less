@@ -1,7 +1,9 @@
 .gift {
   position: relative;
-  margin: 20px;
   margin-top: 35px;
+  margin-left: 20px;
+  margin-bottom: 35px;
+  margin-right: 20px;
 
   &::after {
     position: absolute;
@@ -35,14 +37,16 @@
   text-align: center;
   max-width: 160px;
   margin: 0 auto;
-  padding: 200px 0 30px;
+  padding: 188px 0 43px;
   z-index: 3;
 }
 
 @media (min-width: @tablet-width) {
   .gift {
+    margin: 45px 30px 75px;
+
     &::after {
-      background-position: center left 120px, top left;
+      background-position: center left 80px, top left;
     }
   }
 }
@@ -50,11 +54,12 @@
 @media (min-width: @tablet-width) {
   .gift__text {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 100px;
     margin-top: 0;
     margin-bottom: 0;
-    padding: 100px 20px;
-    max-width: 250px;
+    padding: 72px 20px 70px;
+    max-width: 165px;
+    text-align: left;
   }
 }
 

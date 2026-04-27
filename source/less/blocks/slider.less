@@ -81,18 +81,17 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .slider__before,
-  .slider__after {
-    background-color: unset;
-    background-image: linear-gradient(to top, #eaeaea 375px, @fancy-color 375px);
-  }
-}
-
-
 @media (min-width: @tablet-width) {
   .slider {
     width: 560px;
     height: 512px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__before,
+  .slider__after {
+    background-color: unset;
+    background-image: linear-gradient(to bottom, @fancy-color 138px, #eaeaea 138px);
   }
 }

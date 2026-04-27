@@ -1,7 +1,3 @@
-.contacts {
-  background-color: #f2f2f2;
-}
-
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -78,6 +74,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .contacts__address {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .contacts {
     position: relative;
   }
@@ -91,14 +93,10 @@
     width: 565px;
     gap: 87px;
     box-sizing: border-box;
+    background-color: #ffffff;
+    padding-left: 80px;
   }
 }
-
-
-picture {
-  display: contents;
-}
-
 
 .contacts__map {
   display: block;
