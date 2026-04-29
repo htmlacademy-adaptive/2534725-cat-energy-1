@@ -4,8 +4,10 @@
 }
 
 .form-data__wrapper {
+  display: grid;
+  gap: 20px;
   text-align: center;
-  margin: 0 20px;
+  padding: 23px 20px 13px;
 }
 
 .form-data__text {
@@ -14,6 +16,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 114%;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -21,7 +24,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    margin: 52px 70px;
+    padding: 0 70px 43px;
     align-items: center;
   }
 }
@@ -29,5 +32,7 @@
 @media (min-width: @tablet-width) {
   .form-data__text {
     text-align: left;
+    font-size: 16px;
+    line-height: 16px;
   }
 }

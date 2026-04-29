@@ -29,6 +29,8 @@
 
     .transfer__subtitle {
       max-width: initial;
+      margin: 0;
+      margin-bottom: 8px;
     }
 
     .transfer__text {
@@ -245,6 +247,14 @@
 }
 
 @media (min-width: @tablet-width) {
+  .transfer__card {
+    &--more {
+      background-image: url("../../img/desktop-plus.svg");
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
   .transfer__text {
     font-weight: 400;
     font-size: 16px;
@@ -266,7 +276,7 @@
 
 @media (min-width: @desktop-width) {
   .transfer {
-    padding: 55px 110px 30px;
+    padding: 18px 110px 30px;
   }
 }
 
@@ -278,9 +288,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .transfer__pic {
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transfer__subtitle {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transfer__button {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transfer__button-all {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .transfer__card {
     &--more {
-      background-image: url("../../img/desktop-plus.svg");
+      padding-top: 150px;
     }
   }
 }

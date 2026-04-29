@@ -6,14 +6,14 @@
 }
 
 .extra-info__card {
-  padding: 12px 0 17px 0;
+  padding: 12px 0 18px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "subtitle subtitle"
     "text price"
     "button button";
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-info__title {
@@ -22,7 +22,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
-  padding-left: 20px;
   margin: 0;
   margin-bottom: 36px;
 }
@@ -62,6 +61,12 @@
 
 .extra-info__list {
   .list-reset();
+}
+
+.extra-info__item:first-child {
+  .extra-info__card {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 .extra-info__button {
@@ -104,9 +109,9 @@
       "subtitle text price"
       "button button button";
     align-items: center;
-    border: 1px solid #f2f2f2;
     padding: 26px 37px 28px;
-    margin-bottom: -1px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 }
 
@@ -158,16 +163,31 @@
 }
 
 @media (min-width: @desktop-width) {
+  .extra-info__button {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .extra-info {
-    border-bottom: 1px solid #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-template-areas:
+      "title title"
+      "list aside";
+    gap: 0 80px;
+    padding: 45px 110px 87px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .extra-info__card {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 145px 100px 245px;
     grid-template-areas: "subtitle text price button";
-    width: 896px;
+    gap: 40px;
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px;
   }
 }
 
@@ -177,7 +197,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
-    padding-right: 40px;
   }
 }
 
@@ -187,7 +206,14 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
-    text-align: right;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra-info__title {
+    grid-area: title;
+    padding-left: 0;
   }
 }
 

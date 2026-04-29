@@ -1,9 +1,7 @@
 .gift {
   position: relative;
   margin-top: 35px;
-  margin-left: 20px;
   margin-bottom: 35px;
-  margin-right: 20px;
 
   &::after {
     position: absolute;
@@ -43,7 +41,7 @@
 
 @media (min-width: @tablet-width) {
   .gift {
-    margin: 45px 30px 75px;
+    margin: 70px 0 50px;
 
     &::after {
       background-position: center left 80px, top left;
@@ -65,6 +63,19 @@
 
 @media (min-width: @desktop-width) {
   .gift {
-    margin-left: 80px;
+    margin: 0;
+
+    &::after {
+      background-position: center top 55px, top left;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift__text {
+    margin: 0;
+    padding: 185px 40px 30px;
+    max-width: 100%;
+    text-align: center;
   }
 }
